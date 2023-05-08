@@ -56,18 +56,18 @@ if(!(price2 >= 1000 && price2 <= 1900)){
 4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
     Результат виводити в консоль.
 
-    let PoraRoku = 4
+    let poraRoku = 4
 
-    if (PoraRoku == 1)
+    if (poraRoku == 1)
         console.log('Vesna')
     else 
-    if (PoraRoku == 2)
+    if (poraRoku == 2)
         console.log('Lito')
     else 
-    if (PoraRoku == 3)
+    if (poraRoku == 3)
         console.log('Osin')
     else 
-    if (PoraRoku == 4)
+    if (poraRoku == 4)
         console.log('Zyma')
     else
         console.log('введіть цифру від 1-4 якщо хочете дізнатись пору року')
@@ -133,11 +133,11 @@ switch(number){
     Математичні операції для обчислення: "+", "-", "*", "/".
     Результат виводити в консоль.
 
-   let Obchyslennya = '+'
+   let obchyslennya = '+'
     let a = 1;
     let b = 2;
 
-    switch(Obchyslennya){
+    switch(obchyslennya){
         case '+': 
             console.log(a+b);
             break;
@@ -157,6 +157,16 @@ switch(number){
 
    //  не розумію як зробити //
 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
+
+//let str = "I love JavaScript";
+//let regexp = (/(?:a)+ (\w+)/i)
+//let result = str.match(regexp);
+//let result = str.match ("a","e","i","o","u","y")
+//let result = str.matchAll (/a,e,i,o,u,y/);
+//console.log(result[1])
+
+
+
 
 9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
     так щоб в консоль виводився результат обчислень з правильним закінченням.
