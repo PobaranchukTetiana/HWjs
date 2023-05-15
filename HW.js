@@ -155,21 +155,43 @@ switch(number){
             break;  
     }
 
-   //  не розумію як зробити //
-8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
+ 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
 
-//let str = "I love JavaScript";
-//let regexp = (/(?:a)+ (\w+)/i)
-//let result = str.match(regexp);
-//let result = str.match ("a","e","i","o","u","y")
-//let result = str.matchAll (/a,e,i,o,u,y/);
-//console.log(result[1])
+let str = "I love JavaScript";
+let regexp = str.replace(/[aeiouy]/gi, '')
+console.log(regexp)
 
-
-
-
+//цю задачу не змогла вирішити сама тож додала відповідь з нашого останнього уроку.
 9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
     так щоб в консоль виводився результат обчислень з правильним закінченням.
     Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
 
-    Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
+let metr = 5000
+let kilometr = metr/1000
+let arr = [metr,kilometr]
+let result = "";
+
+for (let i = 0; i<arr.length; i++){
+let number = arr[i];
+let ending = "";
+if (number===Math.round(number)) {
+    if (number % 10 ===0 || (number %10>=5 && number % 10 <=19)){
+        ending = "ів"
+    }else if (number %10 ===1){
+        ending = ""
+    }else if (number %10 >=2 && number %10 <=4){
+        ending = "и"
+    }
+  }
+  else {
+    ending = "а"
+  }
+  if (i===0) {
+    result = (`${metr} метр${ending}= `)
+  } else {
+    result = `${result} ${kilometr} кілометр${ending}`
+  }
+ }
+ console.log(result)
+
+ 
